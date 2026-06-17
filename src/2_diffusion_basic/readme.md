@@ -23,18 +23,16 @@ Both methods solve the same diffusion problem and their solutions are compared q
 
 The one-dimensional diffusion equation is
 
-\[
+```math
 \frac{\partial u}{\partial t}
 =
-D
-\frac{\partial^2 u}{\partial x^2}
-\]
+D \frac{\partial^2 u}{\partial x^2}
+```
 
 where
 
 - \(u(x,t)\) is the diffusing quantity
 - \(D\) is the diffusion coefficient
-
 ---
 
 ## Methods
@@ -51,37 +49,35 @@ using automatic differentiation.
 
 ---
 
-### Explicit Finite Difference Method
+## Explicit Finite Difference Method
 
 The FDM implementation uses a Forward-Time Central-Space (FTCS) scheme:
 
-\[
+```math
 u_i^{n+1}
 =
 u_i^n
 +
-r
-\left(
+r \left(
 u_{i+1}^n
 -
 2u_i^n
 +
 u_{i-1}^n
 \right)
-\]
+```
 
 where
 
-\[
-r = \frac{D\Delta t}{\Delta x^2}
-\]
+```math
+r = \frac{D \Delta t}{\Delta x^2}
+```
 
 and stability requires
 
-\[
+```math
 r \le 0.5
-\]
-
+```
 ---
 
 ## Project Structure
