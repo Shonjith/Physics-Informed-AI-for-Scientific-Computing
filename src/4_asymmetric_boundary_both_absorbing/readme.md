@@ -30,33 +30,29 @@ The project analyzes:
 
 The one-dimensional diffusion equation is
 
-\[
-\frac{\partial u}{\partial t}
-=
-D
-\frac{\partial^2 u}{\partial x^2}
-\]
+```text
+∂u/∂t = D ∂²u/∂x²
+```
 
 where
 
-- \(u(x,t)\) is the probability density
-- \(D\) is the diffusion coefficient
-
+- u(x,t) is the probability density
+- D is the diffusion coefficient
 ---
 
 ## Boundary Conditions
 
 ### Left Boundary
 
-\[
-u(x_{\text{left}},t)=0
-\]
+```text
+u(x_left,t) = 0
+```
 
 ### Right Boundary
 
-\[
-u(x_{\text{right}},t)=0
-\]
+```text
+u(x_right,t) = 0
+```
 
 Both boundaries absorb probability density reaching the edges of the domain.
 
@@ -64,16 +60,13 @@ Both boundaries absorb probability density reaching the edges of the domain.
 
 ## Analysis Performed
 
-### Survival Probability
+## Survival Probability
 
 The total probability remaining inside the domain:
 
-\[
-S(t)
-=
-\int u(x,t)\,dx
-\]
-
+```text
+S(t) = ∫ u(x,t) dx
+```
 As particles leave through both boundaries, \(S(t)\) decreases continuously with time.
 
 ---
@@ -82,11 +75,9 @@ As particles leave through both boundaries, \(S(t)\) decreases continuously with
 
 The transport dynamics are characterized using
 
-\[
-MSD(t)
-=
-\left\langle (x-x_0)^2 \right\rangle
-\]
+```text
+MSD(t) = ⟨(x - x₀)²⟩
+```
 
 which measures the spatial spread of the surviving particles.
 
@@ -96,17 +87,14 @@ which measures the spatial spread of the surviving particles.
 
 Transport behaviour is determined from
 
-\[
-MSD(t)
-\sim
-t^{\alpha}
-\]
 
-where
+```text
+MSD(t) ~ t^α
+```
 
-- \(\alpha < 1\) → Subdiffusion
-- \(\alpha \approx 1\) → Normal Diffusion
-- \(\alpha > 1\) → Superdiffusion
+- α < 1  → Subdiffusion
+- α ≈ 1  → Normal Diffusion
+- α > 1  → Superdiffusion
 
 ---
 
@@ -114,10 +102,9 @@ where
 
 The long-time behaviour of the survival probability is examined through
 
-\[
-\ln S(t)
-\]
-
+```text
+ln S(t)
+```
 and compared against the theoretical exponential decay rate.
 
 ---
