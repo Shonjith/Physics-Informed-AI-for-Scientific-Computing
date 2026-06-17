@@ -26,43 +26,35 @@ for modeling and analyzing the diffusion process.
 
 The two-dimensional diffusion equation is
 
-\[
-\frac{\partial u}{\partial t}
-=
-D
-\left(
-\frac{\partial^2 u}{\partial x^2}
-+
-\frac{\partial^2 u}{\partial y^2}
-\right)
-\]
+```text
+∂u/∂t = D ( ∂²u/∂x² + ∂²u/∂y² )
+```
 
 where
 
-- \(u(x,y,t)\) is the probability density
-- \(D\) is the diffusion coefficient
-
+- u(x,y,t) is the probability density
+- D is the diffusion coefficient
 ---
 
 ## Boundary Conditions
 
-Absorbing boundaries are imposed on all four edges of the square domain:
+Absorbing boundaries are imposed on all four edges of the square domain.
 
-\[
-u(x,y,t)=0
-\]
+```text
+u(x,y,t) = 0
+```
 
 for
 
-\[
-x=x_{\min},\;x_{\max}
-\]
+```text
+x = x_min , x_max
+```
 
 and
 
-\[
-y=y_{\min},\;y_{\max}
-\]
+```text
+y = y_min , y_max
+```
 
 Particles reaching the boundaries are removed from the system.
 
@@ -76,48 +68,42 @@ The spatial density distribution is visualized at multiple times to examine how 
 
 ---
 
-### Survival Probability
+## Survival Probability
 
-The total probability remaining inside the domain:
+The total probability remaining inside the domain is
 
-\[
-S(t)
-=
-\iint u(x,y,t)\,dx\,dy
-\]
+```text
+S(t) = ∬ u(x,y,t) dx dy
+```
+
+As particles leave through the absorbing boundaries, S(t) decreases with time.
+---
+
+## Mean Square Displacement (MSD)
+
+The transport dynamics are characterized using
+
+```text
+MSD(t) = ⟨ (x-x₀)² + (y-y₀)² ⟩
+```
+
+which measures the spatial spread of the surviving particles.
 
 ---
 
-### Mean Square Displacement (MSD)
-
-Transport dynamics are quantified through
-
-\[
-MSD(t)
-=
-\left\langle
-(x-x_0)^2+(y-y_0)^2
-\right\rangle
-\]
-
----
-
-### Transport Classification
+## Transport Classification
 
 Transport behaviour is classified using
 
-\[
-MSD(t)
-\sim
-t^\alpha
-\]
+```text
+MSD(t) ~ t^α
+```
 
 where
 
-- \(\alpha < 1\) → Subdiffusion
-- \(\alpha \approx 1\) → Normal Diffusion
-- \(\alpha > 1\) → Superdiffusion
-
+- α < 1 → Subdiffusion
+- α ≈ 1 → Normal Diffusion
+- α > 1 → Superdiffusion
 ---
 
 ### Late-Time Survival Decay
