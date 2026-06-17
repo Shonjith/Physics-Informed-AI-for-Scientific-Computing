@@ -16,15 +16,16 @@ Instead of relying on traditional mesh-based numerical methods, this project use
 
 The equation solved is
 
-\[
+$$
 i h_t + \frac{1}{2} h_{xx} + |h|^2 h = 0
-\]
+$$
 
-where
+where:
 
-- \(h(x,t)\) is the complex wave function
-- \(h_t\) is the temporal derivative
-- \(h_{xx}\) is the second spatial derivative
+- $h(x,t)$ is the complex wave function
+- $i$ is the imaginary unit
+- $h_t$ is the time derivative
+- $h_{xx}$ is the second spatial derivative
 
 ---
 
