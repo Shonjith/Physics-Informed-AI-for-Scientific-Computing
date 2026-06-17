@@ -12,9 +12,9 @@ The objective is to investigate whether physics-informed learning can recover hi
 
 Consider the diffusion-reaction equation
 
-[
+
 u_t = D u_{xx} - S(x)u
-]
+
 
 where:
 
@@ -53,9 +53,9 @@ The defect profile acts as a local sink term that removes energy from the system
 
 Synthetic measurements are generated using an Explicit Finite Difference Method (FDM):
 
-[
+
 u_t = D u_{xx} - S(x)u
-]
+
 
 with:
 
@@ -114,7 +114,7 @@ The PINN successfully identifies:
 
 Example result:
 
-* True defect region: (3.0 \le x \le 4.5)
+* True defect region: (3.0 , 4.5)
 * PINN predicted defect region closely matches the ground truth.
 
 ---
