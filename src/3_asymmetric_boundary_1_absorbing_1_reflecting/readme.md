@@ -31,17 +31,14 @@ using both PINNs and classical numerical methods.
 
 The diffusion equation is
 
-\[
-\frac{\partial u}{\partial t}
-=
-D
-\frac{\partial^2 u}{\partial x^2}
-\]
+```text
+∂u/∂t = D ∂²u/∂x²
+```
 
 where
 
-- \(u(x,t)\) is the probability density
-- \(D\) is the diffusion coefficient
+- u(x,t) is the probability density
+- D is the diffusion coefficient
 
 ---
 
@@ -49,9 +46,9 @@ where
 
 ### Left Boundary (Absorbing)
 
-\[
-u(x_{\text{left}},t)=0
-\]
+```text
+u(x_left,t) = 0
+```
 
 Particles reaching the boundary are removed from the system.
 
@@ -59,15 +56,11 @@ Particles reaching the boundary are removed from the system.
 
 ### Right Boundary (Reflecting)
 
-\[
-\frac{\partial u}{\partial x}
-\Bigg|_{x=x_{\text{right}}}
-=
-0
-\]
+```text
+∂u/∂x |_(x = x_right) = 0
+```
 
 No probability flux crosses the boundary.
-
 ---
 
 ## Analysis Performed
@@ -76,28 +69,22 @@ No probability flux crosses the boundary.
 
 The total probability remaining inside the domain:
 
-\[
-S(t)
-=
-\int u(x,t)\,dx
-\]
-
+```text
+S(t) = ∫ u(x,t) dx
+```
 ---
 
 ### Transport Classification
 
-The long-time survival decay is fitted using
-
-\[
-S(t)\sim t^{-\beta}
-\]
+```text
+S(t) ~ t^(-β)
+```
 
 where
 
-- \(\beta \approx 0.5\) → Normal Diffusion
-- \(\beta < 0.5\) → Subdiffusion
-- \(\beta > 0.5\) → Superdiffusion
-
+- β ≈ 0.5 → Normal Diffusion
+- β < 0.5 → Subdiffusion
+- β > 0.5 → Superdiffusion
 ---
 
 ### Log-Log Decay Analysis
