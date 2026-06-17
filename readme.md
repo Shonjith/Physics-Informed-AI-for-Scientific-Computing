@@ -170,8 +170,8 @@ These implementations provide:
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/PINN_VS_FDM_SCIENTIFIC_COMPUTING.git
-cd PINN_VS_FDM_SCIENTIFIC_COMPUTING
+git clone https://github.com/Shonjith/Physics-Informed-AI-for-Scientific-Computing.git
+cd Physics-Informed-AI-for-Scientific-Computing
 ```
 
 Install dependencies:
